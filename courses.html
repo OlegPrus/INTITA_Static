@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <link rel="stylesheet" href="INTITA_files/fontface.css">
+   <link rel="stylesheet" type="text/css" href="INTITA_files/style.css">
+   <link rel="stylesheet" href="INTITA_files/regform.css">'
+   <link rel="stylesheet" type="text/css" href="INTITA_files/hamburgerMenu.css">
+   <link rel="shortcut icon" href="http://intita.com/css/images/favicon.ico" type="image/x-icon">
+   <script type="text/javascript" src="INTITA_files/jquery-1.js"></script>
+   <script type="text/javascript" src="INTITA_files/openDialog.js"></script>
+   <link rel="stylesheet" type="text/css" href="INTITA_files/jquery-ui.css">
+   <script type="text/javascript" src="INTITA_files/jquery.js"></script>
+   <script type="text/javascript" src="INTITA_files/jquery_002.js"></script>
+   <title>INTITA</title>
+  </head>
+
+	<div id="main-wrapper">
+	    <div id="mainheader">
+		        <!-- Hamburger menu -->
+			<div id="hambNav">
+			    <div id="hambButton">
+			        <img src="INTITA_files/hamburger.png">
+			    </div>
+			    <div id="hambMenu">
+			        <a href="http://intita.com/" class="logo">
+			            <img src="INTITA_files/hamburgerlogo.png">
+			        </a>
+
+			        <div class="humblang">
+			                            <a href="http://intita.com/site/changeLang/?lg=ua" class="selectedLang">ua</a>
+			                            <a href="http://intita.com/site/changeLang/?lg=en">en</a>
+			                            <a href="http://intita.com/site/changeLang/?lg=ru">ru</a>
+			                    </div>
+			        <ul class="menulist">
+			            <li><a href="http://intita.com/courses">Курси</a></li>
+			            <li><a href="http://intita.com/teachers">Викладачі</a></li>
+			            <li><a href="http://intita.com/graduate">Випускники</a></li>
+			            <li><a href="http://intita.com/forum" target="_blank">Форум</a></li>
+			            <li><a href="http://intita.com/aboutus">Про нас</a></li>
+			        </ul>
+			        <div class="humundline"></div>
+			        <a id="hum_button" onclick="openSignIn();">Вхід</a>
+			    </div>
+			</div>
+			<div id="headerUnderline">
+			    <div id="navigation" class="down">
+			        <div class="main">
+			            <div id="logo_img" class="down">
+			                <a href="http://intita.com/">
+			                <img id="logo" src="INTITA_files/Logo_small.png">
+			                </a>
+			            </div>
+			            <div id="enterButton">
+			                <div id="button_border" class="down">
+			                </div>
+			                        <a id="enter_button" class="down" onclick="openSignIn();">Почати</a>
+			                    </div>
+			                    <div id="menulist">
+			                        <ul>
+			                            <li>
+			                                <a href="http://intita.com/courses">Курси</a>
+			                            </li>
+			                            <li>
+			                                <a href="http://intita.com/teachers">Викладачі</a>
+			                            </li>
+			                            <li>
+			                                <a href="http://intita.com/graduate">Випускники</a>
+			                            </li>
+			                            <li><a href="http://intita.com/">Онлайн</a></li>
+			                            <li>
+			                                <a href="http://intita.com/aboutus">Про нас</a>
+			                            </li>
+			                        </ul>
+			                    </div>
+			        </div>
+			    </div>
+			</div>
+		</div>
+		 <div id="contentBoxMain">
+
+<div id="content">
+
+	<!--? $css_version = 1; ?-->
+<link type="text/css" rel="stylesheet" href="INTITA_files/courses.css">
+
+<div id="coursesMainBox">
+    <div class="coursesHeader">
+    <h1>Наші курси</h1>
+
+    <table class="coursesType">
+        <tbody><tr>
+            <!--Для початківців (6)   |   Для спеціалістів (0)   |   Для експертів (0)   |   Усі курси (6)   |-->
+            <td valign="top">
+                <div class="sourse "><a href="http://intita.com/courses/junior/">
+                        Для початківців</a>&nbsp;<span class="courseNum">7</span>
+                </div>
+            </td>
+
+            <td>
+                <div class="sourse">&nbsp;&nbsp;<img src="INTITA_files/coursesline2.png">&nbsp;&nbsp;
+                </div>
+            </td>
+            <td valign="top">
+                <div class="sourse "><a href="http://intita.com/courses/middle/">
+                        Для спеціалістів</a>&nbsp;<span class="courseNum">4</span>
+                </div>
+            </td>
+
+            <td>
+                <div class="sourse">&nbsp;&nbsp;<img src="INTITA_files/coursesline2.png">&nbsp;&nbsp;
+                </div>
+            </td>
+            <td valign="top">
+                <div class="sourse "><a href="http://intita.com/courses/senior/">
+                        Для експертів</a>&nbsp;<span class="courseNum">1</span>
+                </div>
+            </td>
+
+            <td>
+                <div class="sourse">&nbsp;&nbsp;<img src="INTITA_files/coursesline2.png">&nbsp;&nbsp;
+                </div>
+            </td>
+            <td valign="top">
+                <div class="sourse selectedSelector"><a href="http://intita.com/courses/all/">
+                        Усі курси</a>&nbsp;<span class="courseNum">12</span></div>
+            </td>
+        </tr>
+    </tbody></table>
+</div>
+<div class="coursesline1">
+    <a id="coursesline1" href="#form"><img src="INTITA_files/coursesline1.png"></a>
+</div>    <table>
+        <tbody><tr>
+            <td>
+            </td><td valign="top">
+    <div id="coursesPart1">
+                        <div class="courseBox">
+                    <img src="INTITA_files/shareCourseImg_13.png">
+
+                    <div class="courseName">Інтернет програміст (РНР)
+                    </div>
+                    <div class="courseLevelBox">
+                        Рівень курсу:                        <span class="courseLevel">
+                        сильний початківець			        </span>
+
+                        <div class="courseLevelIndex">
+                            <span class="courseLevelImage">
+                                <img src="INTITA_files/ratIco1.png">
+                                </span><span class="courseLevelImage">
+                                <img src="INTITA_files/ratIco1.png">
+                                </span><span class="courseLevelImage">
+                                <img src="INTITA_files/ratIco1.png">
+                                </span><span class="courseLevelImage">
+                                <img src="INTITA_files/ratIco0.png">
+                                </span><span class="courseLevelImage">
+                                <img src="INTITA_files/ratIco0.png">
+                                </span>                        </div>
+                    </div>
+                    <!--Стан курсу-->
+                    <div class="courseStatusBox">
+                        Стан курсу:                         <span id="courseStatus1">
+                                                                            <img src="INTITA_files/enable.png">
+                                        доступний                    </span>
+                    </div>
+                    <!--Мови курсу-->
+                    <div class="courseLang">
+                        Мови курсу:                        <a id="coursesLangs" href="http://intita.com/course/ua/php">
+                            ua                        </a>
+
+                    </div>
+                    <div class="coursePriceBox">
+                        Вартість:                             <span id="coursePriceStatus1">2348 $.</span>
+                        &nbsp;<span id="coursePriceStatus2">1644 $.</span>
+                            <span id="discount">(знижка - 30%)</span>
+                                            </div>
+                    <div class="starLevelIndex">
+                        <br>
+                        Оцінка:                        <img src="INTITA_files/starFull.png"><img src="INTITA_files/starFull.png"><img src="INTITA_files/starFull.png"><img src="INTITA_files/starFull.png"><img src="INTITA_files/star-half.png">                    </div>
+                </div>
+                            <div class="courseBox">
+                    <img src="INTITA_files/11000_0006_-10.png">
+
+                    <div class="courseName">Англійська мова для ІТ
+                    </div>
+                    <div class="courseLevelBox">
+                        Рівень курсу:                        <span class="courseLevel">
+                        середній			        </span>
+
+                        <div class="courseLevelIndex">
+                            <span class="courseLevelImage">
+                                <img src="INTITA_files/ratIco1.png">
+                                </span><span class="courseLevelImage">
+                                <img src="INTITA_files/ratIco1.png">
+                                </span><span class="courseLevelImage">
+                                <img src="INTITA_files/ratIco1.png">
+                                </span><span class="courseLevelImage">
+                                <img src="INTITA_files/ratIco1.png">
+                                </span><span class="courseLevelImage">
+                                <img src="INTITA_files/ratIco0.png">
+                                </span>                        </div>
+                    </div>
+                    <!--Стан курсу-->
+                    <div class="courseStatusBox">
+                        Стан курсу:                         <span id="courseStatus0">
+                                                                            <img src="INTITA_files/disabled.png">
+                                        розробляється                    </span>
+                    </div>
+                    <!--Мови курсу-->
+                    <div class="courseLang">
+                        Мови курсу:                        <a id="coursesLangs" href="http://intita.com/course/ua/english">
+                            ua                        </a>
+                                                    <a id="coursesLangs" href="http://intita.com/course/ru/englishru">ru                            </a>
+
+                    </div>
+                    <div class="coursePriceBox">
+                        Вартість:                             <span id="coursePriceStatus1">1229 $.</span>
+                        &nbsp;<span id="coursePriceStatus2">860 $.</span>
+                            <span id="discount">(знижка - 30%)</span>
+                                            </div>
+                    <div class="starLevelIndex">
+                        <br>
+                        Оцінка:                        <img src="INTITA_files/starFull.png"><img src="INTITA_files/starFull.png"><img src="INTITA_files/starFull.png"><img src="INTITA_files/starEmpty.png"><img src="INTITA_files/starEmpty.png">                    </div>
+                </div>
+                            <div class="courseBox">
+                    <img src="INTITA_files/11000_0004_-8.png">
+
+                    <div class="courseName">Програміст (Java)
+                    </div>
+                    <div class="courseLevelBox">
+                        Рівень курсу:                        <span class="courseLevel">
+                        початківець			        </span>
+
+                        <div class="courseLevelIndex">
+                            <span class="courseLevelImage">
+                                <img src="INTITA_files/ratIco1.png">
+                                </span><span class="courseLevelImage">
+                                <img src="INTITA_files/ratIco1.png">
+                                </span><span class="courseLevelImage">
+                                <img src="INTITA_files/ratIco0.png">
+                                </span><span class="courseLevelImage">
+                                <img src="INTITA_files/ratIco0.png">
+                                </span><span class="courseLevelImage">
+                                <img src="INTITA_files/ratIco0.png">
+                                </span>                        </div>
+                    </div>
+                    <!--Стан курсу-->
+                    <div class="courseStatusBox">
+                        Стан курсу:                         <span id="courseStatus0">
+                                                                            <img src="INTITA_files/disabled.png">
+                                        розробляється                    </span>
+                    </div>
+                    <!--Мови курсу-->
+                    <div class="courseLang">
+                        Мови курсу:                        <a id="coursesLangs" href="http://intita.com/course/ua/java">
+                            ua                        </a>
+
+                    </div>
+                    <div class="coursePriceBox">
+                        Вартість:                             <span id="coursePriceStatus1">670 $.</span>
+                        &nbsp;<span id="coursePriceStatus2">469 $.</span>
+                            <span id="discount">(знижка - 30%)</span>
+                                            </div>
+                    <div class="starLevelIndex">
+                        <br>
+                        Оцінка:                        <img src="INTITA_files/starFull.png"><img src="INTITA_files/starFull.png"><img src="INTITA_files/starFull.png"><img src="INTITA_files/starEmpty.png"><img src="INTITA_files/starEmpty.png">                    </div>
+                </div>
+                            <div class="courseBox">
+                    <img src="INTITA_files/11000_0007_-9.png">
+
+                    <div class="courseName"><a href="http://intita.com/course/ua/cplusplus">Програміст (С++)</a>
+                    </div>
+                    <div class="courseLevelBox">
+                        Рівень курсу:                        <span class="courseLevel">
+                        стажер			        </span>
+
+                        <div class="courseLevelIndex">
+                            <span class="courseLevelImage">
+                                <img src="INTITA_files/ratIco1.png">
+                                </span><span class="courseLevelImage">
+                                <img src="INTITA_files/ratIco0.png">
+                                </span><span class="courseLevelImage">
+                                <img src="INTITA_files/ratIco0.png">
+                                </span><span class="courseLevelImage">
+                                <img src="INTITA_files/ratIco0.png">
+                                </span><span class="courseLevelImage">
+                                <img src="INTITA_files/ratIco0.png">
+                                </span>                        </div>
+                    </div>
+                    <!--Стан курсу-->
+                    <div class="courseStatusBox">
+                        Стан курсу:                         <span id="courseStatus0">
+                                                                            <img src="INTITA_files/disabled.png">
+                                        розробляється                    </span>
+                    </div>
+                    <!--Мови курсу-->
+                    <div class="courseLang">
+                        Мови курсу:                        <a id="coursesLangs" href="http://intita.com/course/ua/cplusplus">
+                            ua                        </a>
+
+                    </div>
+                    <div class="coursePriceBox">
+                        Вартість:                             <span id="coursePriceStatus1">440 $.</span>
+                        &nbsp;<span id="coursePriceStatus2">308 $.</span>
+                            <span id="discount">(знижка - 30%)</span>
+                                            </div>
+                    <div class="starLevelIndex">
+                        <br>
+                        Оцінка:                        <img src="INTITA_files/starFull.png"><img src="INTITA_files/starFull.png"><img src="INTITA_files/starFull.png"><img src="INTITA_files/starEmpty.png"><img src="INTITA_files/starEmpty.png">                    </div>
+                </div>
+                            <div class="courseBox">
+                    <img src="INTITA_files/11000_0003.png">
+
+                    <div class="courseName">Програміст (Swift)
+                    </div>
+                    <div class="courseLevelBox">
+                        Рівень курсу:                        <span class="courseLevel">
+                        початківець			        </span>
+
+                        <div class="courseLevelIndex">
+                            <span class="courseLevelImage">
+                                <img src="INTITA_files/ratIco1.png">
+                                </span><span class="courseLevelImage">
+                                <img src="INTITA_files/ratIco1.png">
+                                </span><span class="courseLevelImage">
+                                <img src="INTITA_files/ratIco0.png">
+                                </span><span class="courseLevelImage">
+                                <img src="INTITA_files/ratIco0.png">
+                                </span><span class="courseLevelImage">
+                                <img src="INTITA_files/ratIco0.png">
+                                </span>                        </div>
+                    </div>
+                    <!--Стан курсу-->
+                    <div class="courseStatusBox">
+                        Стан курсу:                         <span id="courseStatus0">
+                                                                            <img src="INTITA_files/disabled.png">
+                                        розробляється                    </span>
+                    </div>
+                    <!--Мови курсу-->
+                    <div class="courseLang">
+                        Мови курсу:                        <a id="coursesLangs" href="http://intita.com/course/ua/swift">
+                            ua                        </a>
+
+                    </div>
+                    <div class="coursePriceBox">
+                        Вартість:                             <span id="coursePriceStatus1">440 $.</span>
+                        &nbsp;<span id="coursePriceStatus2">308 $.</span>
+                            <span id="discount">(знижка - 30%)</span>
+                                            </div>
+                    <div class="starLevelIndex">
+                        <br>
+                        Оцінка:                        <img src="INTITA_files/starFull.png"><img src="INTITA_files/starFull.png"><img src="INTITA_files/starEmpty.png"><img src="INTITA_files/starEmpty.png"><img src="INTITA_files/starEmpty.png">                    </div>
+                </div>
+                            <div class="courseBox">
+                    <img src="INTITA_files/icons1-2.jpg">
+
+                    <div class="courseName">ВЕБ-дизайнер. Проектувальник інтерфейсів (UI)
+                    </div>
+                    <div class="courseLevelBox">
+                        Рівень курсу:                        <span class="courseLevel">
+                        сильний початківець			        </span>
+
+                        <div class="courseLevelIndex">
+                            <span class="courseLevelImage">
+                                <img src="INTITA_files/ratIco1.png">
+                                </span><span class="courseLevelImage">
+                                <img src="INTITA_files/ratIco1.png">
+                                </span><span class="courseLevelImage">
+                                <img src="INTITA_files/ratIco1.png">
+                                </span><span class="courseLevelImage">
+                                <img src="INTITA_files/ratIco0.png">
+                                </span><span class="courseLevelImage">
+                                <img src="INTITA_files/ratIco0.png">
+                                </span>                        </div>
+                    </div>
+                    <!--Стан курсу-->
+                    <div class="courseStatusBox">
+                        Стан курсу:                         <span id="courseStatus0">
+                                                                            <img src="INTITA_files/disabled.png">
+                                        розробляється                    </span>
+                    </div>
+                    <!--Мови курсу-->
+                    <div class="courseLang">
+                        Мови курсу:                        <a id="coursesLangs" href="http://intita.com/course/ua/UIDesigner">
+                            ua                        </a>
+
+                    </div>
+                    <div class="coursePriceBox">
+                        Вартість:                             <span id="coursePriceStatus1">255 $.</span>
+                        &nbsp;<span id="coursePriceStatus2">179 $.</span>
+                            <span id="discount">(знижка - 30%)</span>
+                                            </div>
+                    <div class="starLevelIndex">
+                        <br>
+                        Оцінка:                        <img src="INTITA_files/starEmpty.png"><img src="INTITA_files/starEmpty.png"><img src="INTITA_files/starEmpty.png"><img src="INTITA_files/starEmpty.png"><img src="INTITA_files/starEmpty.png">                    </div>
+                </div>
+                </div>
+</td>            <td>
+
+
+    </div>
+</div>                <div class="courseBox">
+                    <img src="INTITA_files/11000_0005_-7.png">
+
+                    <div class="courseName">Побудова успішної ІТ кар’єри
+                    </div>
+                    <!--Рівень курсу-->
+                    <div class="courseLevelBox">
+                        Рівень курсу:                        <span class="courseLevel">
+                        високий			        </span>
+
+                        <div class="courseLevelIndex">
+                            <span class="courseLevelImage">
+                                <img src="INTITA_files/ratIco1.png">
+                                </span><span class="courseLevelImage">
+                                <img src="INTITA_files/ratIco1.png">
+                                </span><span class="courseLevelImage">
+                                <img src="INTITA_files/ratIco1.png">
+                                </span><span class="courseLevelImage">
+                                <img src="INTITA_files/ratIco1.png">
+                                </span><span class="courseLevelImage">
+                                <img src="INTITA_files/ratIco1.png">
+                                </span>                        </div>
+                    </div>
+                    <!--Стан курсу-->
+                    <div class="courseStatusBox">
+                        Стан курсу:                         <span id="courseStatus0">
+                                                                            <img src="INTITA_files/disabled.png">
+                                        розробляється                    </span>
+                    </div>
+                    <div class="courseLang">
+                        Мови курсу:                        <a id="coursesLangs" href="http://intita.com/course/ua/career">
+                            ua                        </a>
+                                            </div>
+
+                    <div class="coursePriceBox">
+                        Вартість:                             <span class="colorGreen">безкоштовно</span>
+                                            </div>
+                    <div class="starLevelIndex">
+                        <br>
+                        Оцінка:                        <img src="INTITA_files/star-half.png"><img src="INTITA_files/starEmpty.png"><img src="INTITA_files/starEmpty.png"><img src="INTITA_files/starEmpty.png"><img src="INTITA_files/starEmpty.png">                    </div>
+                </div>                 <div class="courseBox">
+                    <img src="INTITA_files/11000_0008_-6.png">
+
+                    <div class="courseName">Інтернет програміст (Java Script)
+                    </div>
+                    <!--Рівень курсу-->
+                    <div class="courseLevelBox">
+                        Рівень курсу:                        <span class="courseLevel">
+                        сильний початківець			        </span>
+
+                        <div class="courseLevelIndex">
+                            <span class="courseLevelImage">
+                                <img src="INTITA_files/ratIco1.png">
+                                </span><span class="courseLevelImage">
+                                <img src="INTITA_files/ratIco1.png">
+                                </span><span class="courseLevelImage">
+                                <img src="INTITA_files/ratIco1.png">
+                                </span><span class="courseLevelImage">
+                                <img src="INTITA_files/ratIco0.png">
+                                </span><span class="courseLevelImage">
+                                <img src="INTITA_files/ratIco0.png">
+                                </span>                        </div>
+                    </div>
+                    <!--Стан курсу-->
+                    <div class="courseStatusBox">
+                        Стан курсу:                         <span id="courseStatus0">
+                                                                            <img src="INTITA_files/disabled.png">
+                                        розробляється                    </span>
+                    </div>
+                    <div class="courseLang">
+                        Мови курсу:                        <a id="coursesLangs" href="http://intita.com/course/ua/javascript">
+                            ua                        </a>
+                                            </div>
+
+                    <div class="coursePriceBox">
+                        Вартість:                             <span class="colorGreen">безкоштовно</span>
+                                            </div>
+                    <div class="starLevelIndex">
+                        <br>
+                        Оцінка:                        <img src="INTITA_files/starFull.png"><img src="INTITA_files/starFull.png"><img src="INTITA_files/starFull.png"><img src="INTITA_files/starEmpty.png"><img src="INTITA_files/starEmpty.png">                    </div>
+                </div>                 <div class="courseBox">
+                    <img src="INTITA_files/11000_0000_-5.png">
+
+                    <div class="courseName">Програміст (C#)
+                    </div>
+                    <!--Рівень курсу-->
+                    <div class="courseLevelBox">
+                        Рівень курсу:                        <span class="courseLevel">
+                        початківець			        </span>
+
+                        <div class="courseLevelIndex">
+                            <span class="courseLevelImage">
+                                <img src="INTITA_files/ratIco1.png">
+                                </span><span class="courseLevelImage">
+                                <img src="INTITA_files/ratIco1.png">
+                                </span><span class="courseLevelImage">
+                                <img src="INTITA_files/ratIco0.png">
+                                </span><span class="courseLevelImage">
+                                <img src="INTITA_files/ratIco0.png">
+                                </span><span class="courseLevelImage">
+                                <img src="INTITA_files/ratIco0.png">
+                                </span>                        </div>
+                    </div>
+                    <!--Стан курсу-->
+                    <div class="courseStatusBox">
+                        Стан курсу:                         <span id="courseStatus0">
+                                                                            <img src="INTITA_files/disabled.png">
+                                        розробляється                    </span>
+                    </div>
+                    <div class="courseLang">
+                        Мови курсу:                        <a id="coursesLangs" href="http://intita.com/course/ua/csharp">
+                            ua                        </a>
+                                            </div>
+
+                    <div class="coursePriceBox">
+                        Вартість:                             <span id="coursePriceStatus1">440 $.</span>
+                            &nbsp;<span id="coursePriceStatus2">308 $.</span>
+                            <span id="discount">(знижка - 30%)</span>
+                                            </div>
+                    <div class="starLevelIndex">
+                        <br>
+                        Оцінка:                        <img src="INTITA_files/starFull.png"><img src="INTITA_files/starFull.png"><img src="INTITA_files/starFull.png"><img src="INTITA_files/starEmpty.png"><img src="INTITA_files/starEmpty.png">                    </div>
+                </div>                 <div class="courseBox">
+                    <img src="INTITA_files/11000_0001_-4.png">
+
+                    <div class="courseName">Тестувальник (QA)
+                    </div>
+                    <!--Рівень курсу-->
+                    <div class="courseLevelBox">
+                        Рівень курсу:                        <span class="courseLevel">
+                        середній			        </span>
+
+                        <div class="courseLevelIndex">
+                            <span class="courseLevelImage">
+                                <img src="INTITA_files/ratIco1.png">
+                                </span><span class="courseLevelImage">
+                                <img src="INTITA_files/ratIco1.png">
+                                </span><span class="courseLevelImage">
+                                <img src="INTITA_files/ratIco1.png">
+                                </span><span class="courseLevelImage">
+                                <img src="INTITA_files/ratIco1.png">
+                                </span><span class="courseLevelImage">
+                                <img src="INTITA_files/ratIco0.png">
+                                </span>                        </div>
+                    </div>
+                    <!--Стан курсу-->
+                    <div class="courseStatusBox">
+                        Стан курсу:                         <span id="courseStatus0">
+                                                                            <img src="INTITA_files/disabled.png">
+                                        розробляється                    </span>
+                    </div>
+                    <div class="courseLang">
+                        Мови курсу:                        <a id="coursesLangs" href="http://intita.com/course/ua/qa">
+                            ua                        </a>
+                                            </div>
+
+                    <div class="coursePriceBox">
+                        Вартість:                             <span class="colorGreen">безкоштовно</span>
+                                            </div>
+                    <div class="starLevelIndex">
+                        <br>
+                        Оцінка:                        <img src="INTITA_files/starFull.png"><img src="INTITA_files/starFull.png"><img src="INTITA_files/starFull.png"><img src="INTITA_files/starEmpty.png"><img src="INTITA_files/starEmpty.png">                    </div>
+                </div>                 <div class="courseBox">
+                    <img src="INTITA_files/11000_0002_-1.png">
+
+                    <div class="courseName">Верстальник сайтів (HTML, CSS)
+                    </div>
+                    <!--Рівень курсу-->
+                    <div class="courseLevelBox">
+                        Рівень курсу:                        <span class="courseLevel">
+                        середній			        </span>
+
+                        <div class="courseLevelIndex">
+                            <span class="courseLevelImage">
+                                <img src="INTITA_files/ratIco1.png">
+                                </span><span class="courseLevelImage">
+                                <img src="INTITA_files/ratIco1.png">
+                                </span><span class="courseLevelImage">
+                                <img src="INTITA_files/ratIco1.png">
+                                </span><span class="courseLevelImage">
+                                <img src="INTITA_files/ratIco1.png">
+                                </span><span class="courseLevelImage">
+                                <img src="INTITA_files/ratIco0.png">
+                                </span>                        </div>
+                    </div>
+                    <!--Стан курсу-->
+                    <div class="courseStatusBox">
+                        Стан курсу:                         <span id="courseStatus0">
+                                                                            <img src="INTITA_files/disabled.png">
+                                        розробляється                    </span>
+                    </div>
+                    <div class="courseLang">
+                        Мови курсу:                        <a id="coursesLangs" href="http://intita.com/course/ua/verstka">
+                            ua                        </a>
+                                            </div>
+
+                    <div class="coursePriceBox">
+                        Вартість:                             <span class="colorGreen">безкоштовно</span>
+                                            </div>
+                    <div class="starLevelIndex">
+                        <br>
+                        Оцінка:                        <img src="INTITA_files/starEmpty.png"><img src="INTITA_files/starEmpty.png"><img src="INTITA_files/starEmpty.png"><img src="INTITA_files/starEmpty.png"><img src="INTITA_files/starEmpty.png">                    </div>
+                </div>     </div>
+</td>
+        </tr>
+    </tbody></table>
+</div>
+
+<script src="INTITA_files/spoilerBlock.js"></script>
+<div style="display: none">
+    <h1 itemprop="name">Наші курси. INTITA - ПРОГРАМУЙ МАЙБУТНЄ!</h1>
+    <img itemprop="image" src="INTITA_files/intitaLogo.jpg">
+    <p itemprop="description">Хочеш стати висококласним спеціалістом? Приймай вірне рішення - навчайся разом з нами!
+Ми працюємо на результат!</p>
+    </div>
+        </div>
+    </div>
+</div>
+
+</div>
+<div id="mainfooter">
+    <div style="height: 90px;display: block;border-bottom: 1px solid #44bdf6;">
+        <div class="footercontent">
+
+            <div class="centerfooter">
+                <div class="footerlogo">
+                    <a href="http://intita.com/">
+                        <img src="images/Logo_small.png">
+                    </a>
+                </div>
+                <div class="footercontact">
+                    <p>
+                        телефон:  +38 0432 52 82 67<br>
+                        тел. моб. +38 067 431 20 10<br>
+                        ел. пошта: intita.hr@gmail.com<br>
+                        скайп: int.ita<br>
+                    </p>
+                </div>
+                <div class="footermenu">
+                    <ul>
+                        <li>
+                            <a href="http://intita.com/courses">Курси</a>
+                        </li>
+                        <li>
+                            <a href="http://intita.com/teachers">Викладачі</a>
+                        </li>
+                        <li>
+                            <a href="http://intita.com/graduate">Випускники</a>
+                        </li>
+                        <li>
+                            <a href="http://intita.com/">Онлайн</a>
+                            </li>
+                        <li>
+                            <a href="http://intita.com/aboutus">Про нас</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="rightfooter">
+                <a onclick="goUp()"><img src="images/go_up.png"></a>
+            </div>
+        </div>
+    </div>
+</div>
