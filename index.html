@@ -3,11 +3,7 @@
   <head>
      <meta charset="utf-8">
      <title>INTITA_WORK</title>
-     <script type="text/javascript" src="js/jquery-1.js"></script>
-     <script type="text/javascript" src="js/jquery_002.js"></script>
-	 <script type="text/javascript" src="js/jquery.js"></script>
-	 <script type="text/javascript" src="js/jquery_003.js"></script>
-	 <script async="" src="js/jquery_004.js"></script>
+     <script type="text/javascript" src="js/jquery-3.0.0.min.js"></script>
 	 <script type="text/javascript" src="js/hamburgermenu.js"></script>
      <link rel="stylesheet" href="styles/fontface.css">
    	 <link rel="stylesheet" type="text/css" href="styles/style.css">
@@ -15,10 +11,16 @@
      <link rel="stylesheet" type="text/css" href="styles/hamburgerMenu.css">
      <link rel="stylesheet" type="text/css" href="styles/slider.css">
 
-     <link rel="stylesheet" href="styles/owl.css">
-     <link rel="stylesheet" href="styles/owl_002.css">
+    <!-- Important Owl stylesheet -->
+    <link rel="stylesheet" href="styles/owl.carousel.css">
+
+    <!-- Default Theme -->
+    <link rel="stylesheet" href="styles/owl.theme.css">
+
+    <!-- Include js plugin -->
+    <script src="js/owl.carousel.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
      <link rel="stylesheet" href="styles/fontface.css">
-     <script type="text/javascript" src="js/owl.js"></script>
      <link rel="stylesheet" href="styles/step.css">
      <link rel="stylesheet" type="text/css" href="styles/aboutusstyles.css">
      <link rel="stylesheet" href="styles/regform.css">
@@ -31,11 +33,11 @@
 		<div id="main-wrapper">
 		    <div id="mainheader">
 		        <!-- Hamburger menu -->
-							<div style="display: block;" id="hambNav">
+							<div style="display: none;" id="hambNav">
 							    <div id="hambButton">
 							        <img src="images/hamburger.png">
 							    </div>
-							    <div style="display: none; overflow-y: visible; height: inherit;" id="hambMenu">
+							    <div style="display: none; " id="hambMenu">
 							        <a href="http://intita.com/" class="logo">
 							            <img src="images/hamburgerlogo.png">
 							        </a>
@@ -47,8 +49,10 @@
 							            <li><a href="http://intita.com/aboutus">Про нас</a></li>
 							        </ul>
 							        <div class="humundline"></div>
-							        <a id="hum_button" onclick="openSignIn();">Почати</a>    </div>
-							</div>        <div class="downmain" id="headerUnderline">
+							        <a id="hum_button" href="#form">Почати</a>
+							    </div>
+							</div>
+							   <div class="downmain" id="headerUnderline">
 							            <div id="navigation" class="">
 		                <div class="main">
 		                    <div id="logo_img" class="">
@@ -60,7 +64,7 @@
 		                    <div class="" id="enterButton">
 		                        <div id="button_border" class="">
 		                        </div>
-		                        <a id="enter_button" class="" onclick="openSignIn();">Почати</a>
+		                        <a id="enter_button" href="#form">Почати</a>
 		                    </div>
 		                    <div id="menulist">
 		                        <ul>
@@ -123,95 +127,24 @@
 				        </div>
 				    </div>
 				</div>
-				<div style="opacity: 1; display: block;" id="slider" class="owl-carousel owl-theme">
-		            <div class="owl-wrapper-outer">
-		                <div style="width: 18886px; left: 0px; display: block; transition: all 2000ms ease 0s; transform: translate3d(-2698px, 0px, 0px);" class="owl-wrapper">
-		                 	<div style="width: 1349px; height: 618.807px;" class="owl-item">
-		                 	 	<div class="slide">
-		            				<div>
-		              					<p style="width: 1349px; top: 334.833px;">Ми гарантуємо Тобі отримання пропозиції працевлаштування<br>
-																					після успішного завершення навчання!</p>
-							                <img src="images/1.jpg">
-							        </div>
-							    </div>
-							</div>
-							<div style="width: 1349px; height: 618.807px;" class="owl-item">
-								<div class="slide">
-							    	<div>
-							       		<p style="width: 1349px; top: 334.833px;">Не упусти свій шанс змінити світ - отримай якісну та сучасну освіту<br>
-																					і стань класним спеціалістом!</p>
-							                <img src="images/2.jpg">
-							        </div>
-							    </div>
-							</div>
-							<div style="width: 1349px; height: 618.807px;" class="owl-item">
-								<div class="slide">
-							        <div>
-							            <p style="width: 1349px; top: 334.833px;">Хочеш стати висококласним спеціалістом? Приймай вірне рішення - навчайся з нами!
-							            <br> Ми працюємо на результат!</p>
-							                <img src="images/3.jpg">
-							        </div>
-							    </div>
-							</div>
-							<div style="width: 1349px; height: 618.807px;" class="owl-item">
-							<div class="slide">
-							    <div>
-							        <p style="width: 1349px; top: 334.833px;">Не втрачай шансу на творчу, цікаву та перспективну працю –<br> плануй своє професійне майбутнє вже сьогодні!</p>
-							            <img src="images/4.jpg">
-						        </div>
-						    </div></div>
-						    <div style="width: 1349px; height: 618.807px;" class="owl-item">
-						    <div class="slide">
-							    <div>
-							        <p style="width: 1349px; top: 334.833px;">Один рік цікавого навчання - і ти станеш гарним програмістом<br>
-									готовим працювати в індустрії інформаційних технологій!</p>
-							        <img src="images/9.jpg">
-							    </div>
-							</div></div>
-							<div style="width: 1349px; height: 618.807px;" class="owl-item">
-							<div class="slide">
-							    <div>
-							        <p style="width: 1349px; top: 334.833px;">Мрієш заробляти улюбленою справою і отримувати задоволення від професії?<br> Скористайся можливістю потрапити у світ інформаційних технологій!</p>
-							        <img src="images/10.jpg">
-							    </div>
-							    </div>
-							</div>
-							<div style="width: 1349px; height: 618.807px;" class="owl-item">
-							<div class="slide">
-							    <div>
-							        <p style="width: 1349px; top: 334.833px;">В майбутньому буде два типи робіт: ті - де Ти будеш керувати комп'ютером - програмувати <br> і ті - де машини вказуватимуть що робити Тобі!</p>
-							        <img src="images/5.jpg">
-							    </div>
-		        			</div>
-		        		</div>
-		        	</div>
-		        </div>
-
-					<div style="margin-left: 0px; left: 5%; width: auto;" class="owl-controls clickable">
-					    <div class="owl-pagination">
-					   		 <div class="owl-page">
-					  		  <span class=""></span>
-					    </div>
-					    <div class="owl-page">
-					    	<span class=""></span>
-					    </div>
-					    <div class="owl-page">
-					    	<span class=""></span>
-					    </div>
-					    <div class="owl-page">
-					    	<span class=""></span>
-					    </div>
-					    <div class="owl-page">
-					    	<span class=""></span>
-					    </div>
-					    <div class="owl-page active">
-					    	<span class=""></span>
-					    </div>
-					    <div class="owl-page">
-					    	<span class=""></span>
-					    </div>
-					    </div>
-					</div>
+				<div id="owl-slider" class="owl-carousel">
+		            <div><img src="images/1.jpg">
+		            <p style="width: 1335px; top: 332.5px;">Ми гарантуємо Тобі отримання пропозиції працевлаштування<br>
+					після успішного завершення навчання!</p></div>
+		            <div><img src="images/2.jpg">
+		            <p style="width: 1335px; top: 332.5px;">Не упусти свій шанс змінити світ - отримай якісну та сучасну освіту<br>
+					і стань класним спеціалістом!</p></div>
+		            <div><img src="images/3.jpg">
+		            <p style="width: 1335px; top: 332.5px;">Хочеш стати висококласним спеціалістом? Приймай вірне рішення - навчайся з нами!<br>
+					Ми працюємо на результат!</p></div>
+		            <div><img src="images/4.jpg">
+		            <p style="width: 1335px; top: 332.5px;">Не втрачай шансу на творчу, цікаву та перспективну працю –<br> плануй своє професійне майбутнє вже сьогодні!</p>
+		            </div>
+		            <div><img src="images/5.jpg">
+					<p style="width: 1335px; top: 332.5px;">Один рік цікавого навчання - і ти станеш гарним програмістом<br>готовим працювати в індустрії інформаційних технологій!</p>
+		            </div>
+		            <div><img src="images/6.jpg"></div>
+		            <div><img src="images/7.jpg"></div>
 				</div>
 		<div style="height: 89px; width: 1335px; margin-top: -2.55%;" class="mouseLine">
 		    <a id="mouseLine" href="#form">

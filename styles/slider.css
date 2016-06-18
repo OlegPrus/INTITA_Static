@@ -21,3 +21,7 @@
 .mouseLine{position:relative;margin-top:-2.55%;z-index:2;min-width:1200px;min-height:78px;}
 #mouseLine{min-width:1200px;min-height:78px;}
 #mouseLine img{min-width:1200px;min-height:78px;}
+#owl-slider img{
+	width: 100%;
+	height: auto;
+}
