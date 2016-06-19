@@ -2,14 +2,22 @@ $(document).ready(function() {
 
 	$("#owl-slider").owlCarousel({
 		// Most important owl features
-      autoPlay: 3000, //Set AutoPlay to 3 seconds
+      autoPlay: 5000, //Set AutoPlay to 3 seconds
 
       items : 1,
       itemsDesktop : [1199,3],
       itemsDesktopSmall : [979,3]
 	});
+    $("#owl-slider-about").owlCarousel({
+        // Most important owl features
+      autoPlay: 5000, //Set AutoPlay to 3 seconds
 
+      items : 1,
+      itemsDesktop : [1199,3],
+      itemsDesktopSmall : [979,3]
+    });
 });
+
 $(function(){
 	$(".passEye").append('<span class="eye" ></span>');
 	$(".passEye .eye").click(function(){

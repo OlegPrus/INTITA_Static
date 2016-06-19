@@ -1,5 +1,5 @@
 .owl-wrapper{width:100%;}
-.owl-controls{position:absolute;top:-1%;width:140px;height:55px;}
+.owl-controls{position:absolute;top:-1%;width:160px;height:55px;}
 .owl-pagination{margin-top:20px;z-index:4;}
 .aboutusslider .owl-wrapper-outer{margin-top:0;z-index:0;}
 #slider{z-index:0;}
@@ -23,5 +23,5 @@
 #mouseLine img{min-width:1200px;min-height:78px;}
 #owl-slider img{
 	width: 100%;
-	height: auto;
+	height: 620px;
 }
