@@ -17,9 +17,9 @@ $(function(){
 		var passVal=$(this).prev().prop('type');
 		if(passVal==='password'){$(this).prev().prop('type','text');
 	}
-	else{$(this).prev().prop('type','password');
-}});
+	else{$(this).prev().prop('type','password');}});
 });
+//ha
 $(document).ready(function(){
     if ($(window).scrollTop() > 80)
     {
@@ -35,6 +35,20 @@ $(document).ready(function(){
         }
         $("#hambNav").css({display: "block"});
     }
+    $("#hambMenu").click(function (e) {
+	    e.stopPropagation();
+	});
+	$('#hambButton').click(function (e) {
+	    e.stopPropagation();
+	    if ($("#hambMenu").css('display') == "none")
+	        setTimeout(function () {
+	            $("#hambMenu").css({display: "block"});
+	        }, 200);
+	    else
+	        setTimeout(function () {
+	            $("#hambMenu").css({display: "none"});
+	        }, 200);
+	});
 });
 
 $(window).scroll(function() {
@@ -57,20 +71,7 @@ $(document).click(function () {
         $("#hambMenu").hide();
     }, 200);
 });
-$("#hambMenu").click(function (e) {
-    e.stopPropagation();
-});
-$('#hambButton').click(function (e) {
-    e.stopPropagation();
-    if ($("#hambMenu").css('display') == "none")
-        setTimeout(function () {
-            $("#hambMenu").css({display: "block"});
-        }, 200);
-    else
-        setTimeout(function () {
-            $("#hambMenu").css({display: "none"});
-        }, 200);
-});
+
 
 function rocketMove(element,w) {
     element.animate({
