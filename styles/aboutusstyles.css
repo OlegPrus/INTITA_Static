@@ -91,6 +91,7 @@
 .img1{display:inline-block;margin:0 10px 0 10px;}
 .img2{display:inline-block;margin-left:5px;}
 .blueword{color:#4b75a4;}
+.blueworda{color: #4b75a4; font-size:30px; text-align: center; position: relative; width: 100%; min-width: 1200px; margin: 0px auto; display: block;}
 .redword{color:#ad2b2b;}
 .pinkword{color:#fa8394;}
 .sunword{color:#ff8a00;}
